@@ -3,7 +3,7 @@ const promise = (i) =>
     new Promise((res) =>
         setTimeout(() => {
             res(i);
-        }, 1000)
+        }, 2000)
     );
 
 // traditional for loop wait for each await checkpoint
@@ -15,6 +15,7 @@ const promise = (i) =>
     }
     console.log("done");
 })();
+console.log('run this while JS thread free from async operation')
 
 // result similar to above, but use global async instead of inside async function
 // console.log("start");

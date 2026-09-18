@@ -101,7 +101,7 @@ class myClass2<T, U> {
     constructor(
         public id: T,
         public name: U
-    ) { }
+    ) {}
 
     func(): T {
         return this.id
@@ -112,11 +112,11 @@ function func11(value: firstType | secondType): value is firstType {
     return (value as firstType).first !== undefined
 }
 
-interface concac {
+interface sample {
     a: number
 }
 
-function concac2<T>(value: T) { console.log(value) }
-concac2<concac>({ a: 1 })
+function sample2<T>(value: T) { console.log(value) }
+sample2<sample>({ a: 1 })
 
-export { }
+export {}
